@@ -211,7 +211,12 @@ body a {
         padding: 0;
         background: url(/assets/img/section-cat-review.jpg) no-repeat 0px 0px;
         background-size: cover;
-        min-height: 400px;
+        min-height: 450px;
+    }
+
+    .col-md-7 {
+        min-height: 450px;
+        background: url(/assets/img/section-purr-progamming-bg.png) no-repeat 68% 69%;
     }
 }
 
