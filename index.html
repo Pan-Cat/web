@@ -1,57 +1,41 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="zh-TW">
 	<head>
+		<meta charset="utf-8">
+		<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" >
 		<title>Pan Cat Technologies | Meow</title>
-		<link href="/css/bootstrap.css" rel='stylesheet' type='text/css' />
-		<script src="/js/jquery.min.js"></script>
+		<meta content="website" property="og:type">
+		<meta content="Pan Cat Technologies | Meow" property="og:title">
+		<meta content="Pan Cat Technologies | Meow" name="twitter:title">
+		<meta content="Build software better, together, with cats." name="description">
+		<meta content="Build software better, together, with cats." property="og:description">
+		<meta content="Build software better, together, with cats." name="twitter:description">
+		<meta content="//github.com/Pan-Cat/logo/blob/master/pancat_01.png?raw=true" property="og:image">
+		<meta content="//github.com/Pan-Cat/logo/blob/master/pancat_01.png?raw=true" name="twitter:image:src">
+		<meta content="//github.com/Pan-Cat/logo/blob/master/pancat_01.png?raw=true" property="og:url">
+		<!-- css -->
+		<link href="/css/bootstrap.css" rel="stylesheet" type="text/css">
 		<link href="/css/animate.css" rel="stylesheet" type="text/css" media="all">
-		<script src="/js/wow.min.js"></script>
-		<script>
-		 new WOW().init();
-		</script>
-		<script type="text/javascript" src="/js/move-top.js"></script>
-		<script type="text/javascript" src="/js/easing.js"></script>
-		<script type="text/javascript">
-			jQuery(document).ready(function($) {
-				$(".scroll").click(function(event){		
-					event.preventDefault();
-					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
-				});
-			});
-		</script>
-		<link href="/css/style.css" rel='stylesheet' type='text/css' />
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-		</script>
+		<link href="/css/style.css" rel="stylesheet" type="text/css">
 		<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
-		<script>
-			$(function() {
-				var pull 		= $('#pull');
-					menu 		= $('nav ul');
-					menuHeight	= menu.height();
-				$(pull).on('click', function(e) {
-					e.preventDefault();
-					menu.slideToggle();
-				});
-				$(window).resize(function(){
-	        		var w = $(window).width();
-	        		if(w > 320 && menu.is(':hidden')) {
-	        			menu.removeAttr('style');
-	        		}
-	    		});
-			});
-		</script>
 	</head>
 	<body>
+		<!-- home -->
 		<div class="bg">
+
 			<div id="home" class="header wow bounceInDown" data-wow-delay="0.4s">
-					<div class="top-header">
-						<div class="container">
+				<div class="top-header">
+					<div class="container">
 						<div class="logo">
-							<a href="#"><img src="/images/logo.png" title="Pan Cat Logo" /></a>
+							<a href="/"><img src="/images/pancat-logo.png" title="Pan Cat Logo" /></a>
 						</div>
-						 <nav class="top-nav">
+						<nav class="top-nav">
 							<ul class="top-nav">
 								<li><a href="#home" class="scroll">Home</a></li>
 								<li class="active"><a href="#services" class="scroll">Services</a></li>
@@ -65,6 +49,7 @@
 					</div>
 				</div>
 			</div>
+
 			<div class="banner wow fadeIn" data-wow-delay="0.5s">
 				<div class="container">
 					<div class="banner-info text-center">
@@ -74,294 +59,310 @@
 					</div>
 				</div>
 			</div>
+
 		</div>
-			<div id="services" class="services">
-				<div class="container">
-					<div class="service-head text-center">
-						<h2>Core Services</h2>
-						<span> </span>
-					</div>
-					<div class="services-grids text-center">
-						<div class="col-md-4">
-							<div class="service-grid wow bounceIn" data-wow-delay="0.4s">
-								<span class="service-icon1"> </span>
-								<h3><a href="#">Beautiful Designs</a></h3>
-								<p>Proin iaculis purus consequat sem digni ssim. Donec porttitora entum aenean rhoncus posuere odio in.</p>
-							</div>
-						</div>
-						<div class="col-md-4">
-							<div class="service-grid wow bounceIn" data-wow-delay="0.4s">
-								<span class="service-icon2"> </span>
-								<h3><a href="#">web development</a></h3>
-								<p>Proin iaculis purus consequat sem digni ssim. Donec porttitora entum aenean rhoncus posuere odio in.</p>
-							</div>
-						</div>
-						<div class="col-md-4">
-							<div class="service-grid wow bounceIn" data-wow-delay="0.4s">
-								<span class="service-icon3"> </span>
-								<h3><a href="#">24/7 Support</a></h3>
-								<p>Proin iaculis purus consequat sem digni ssim. Donec porttitora entum aenean rhoncus posuere odio in.</p>
-							</div>
-						</div>
-						<div class="clearfix"> </div>
-					</div>
+
+		<!-- service -->
+		<div id="services" class="services">
+			<div class="container">
+				<div class="service-head text-center">
+					<h2>Core Services</h2>
+					<span> </span>
 				</div>
-			</div>
-			<div class="clearfix"> </div>
-			<div id="port" class="expertise">
-				<div class="expertice-grids">
-					<div class="col-md-8 expertice-left-grid wow fadeInLeft" data-wow-delay="0.4s">
-						<div class="expertise-head">
-							<h3>Other Expertise</h3>
-							<p>Proin iaculis purus consequat sem cure  digni ssim. Donec porttitora entum suscipit  aenean rhoncus posuere odio in tincidunt consequat sem cure  digni ssim. </p>
-						</div>
-						<div class="expertise-left-inner-grids">
-							<div class="e-left-inner-grid">
-								<div class="e-left-inner-grid-left">
-									<span class="e-icon1"> </span>
-								</div>
-								<div class="e-left-inner-grid-right">
-									<h4>Custom setup</h4>
-									<p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus.</p>
-								</div>
-								<div class="clearfix"> </div>
-							</div>
-							<div class="e-left-inner-grid">
-								<div class="e-left-inner-grid-left">
-									<span class="e-icon2"> </span>
-								</div>
-								<div class="e-left-inner-grid-right">
-									<h4>Cloud control</h4>
-									<p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus.</p>
-								</div>
-								<div class="clearfix"> </div>
-							</div>
-							<div class="e-left-inner-grid">
-								<div class="e-left-inner-grid-left">
-									<span class="e-icon3"> </span>
-								</div>
-								<div class="e-left-inner-grid-right">
-									<h4>All star support team</h4>
-									<p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus.</p>
-								</div>
-								<div class="clearfix"> </div>
-							</div>
-							<div class="e-left-inner-grid">
-								<div class="e-left-inner-grid-left">
-									<span class="e-icon4"> </span>
-								</div>
-								<div class="e-left-inner-grid-right">
-									<h4>top notch security</h4>
-									<p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus.</p>
-								</div>
-								<div class="clearfix"> </div>
-							</div>
-							<div class="clearfix"> </div>
-						</div>
-						<a class="leran-more" href="#">Learn more</a>
-					</div>
-					<div class="col-md-4 expertice-right-grid wow fadeInRight" data-wow-delay="0.4s">
-						
-					</div>
-					<div class="clearfix"> </div> 
-				</div>
-			</div>
-			<div class="portfolio">
-				<div class="portfolio-top">
-					<div class="col-md-8">
-						<div class="portfolio-top-left wow fadeInLeft" data-wow-delay="0.4s">
-							<h3>Amazing Portfolio</h3>
-							<p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit.</p>
-							<p>Iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. Proin iaculis purus consequat.</p>
-							<div class="portfolio-top-left-grids">
-								<div class="portfolio-top-left-grid">
-									<div class="portfolio-top-left-grid-left">
-										<span class="p-icon1"> </span>
-									</div>
-									<div class="portfolio-top-left-grid-right">
-										<h5>Sail Away Your Worries</h5>
-										<p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. </p>
-									</div>
-									<div class="clearfix"> </div>
-								</div>
-								<div class="portfolio-top-left-grid">
-									<div class="portfolio-top-left-grid-left">
-										<span class="p-icon2"> </span>
-									</div>
-									<div class="portfolio-top-left-grid-right">
-										<h5>All-star support team</h5>
-										<p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. </p>
-									</div>
-									<div class="clearfix"> </div>
-								</div>
-								<div class="portfolio-top-left-grid">
-									<div class="portfolio-top-left-grid-left">
-										<span class="p-icon3"> </span>
-									</div>
-									<div class="portfolio-top-left-grid-right">
-										<h5>fully Integrated service</h5>
-										<p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. </p>
-									</div>
-									<div class="clearfix"> </div>
-								</div>
-							</div>
+				<div class="services-grids text-center">
+					<div class="col-md-4">
+						<div class="service-grid wow bounceIn" data-wow-delay="0.4s">
+							<span class="service-icon1"> </span>
+							<h3><a href="#">Beautiful Designs</a></h3>
+							<p>Proin iaculis purus consequat sem digni ssim. Donec porttitora entum aenean rhoncus posuere odio in.</p>
 						</div>
 					</div>
-					<div class="col-md-4 portfolio-top-right-inner wow fadeInRight" data-wow-delay="0.4s">
-						<div class="portfolio-top-right">
-							
+					<div class="col-md-4">
+						<div class="service-grid wow bounceIn" data-wow-delay="0.4s">
+							<span class="service-icon2"> </span>
+							<h3><a href="#">web development</a></h3>
+							<p>Proin iaculis purus consequat sem digni ssim. Donec porttitora entum aenean rhoncus posuere odio in.</p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="service-grid wow bounceIn" data-wow-delay="0.4s">
+							<span class="service-icon3"> </span>
+							<h3><a href="#">24/7 Support</a></h3>
+							<p>Proin iaculis purus consequat sem digni ssim. Donec porttitora entum aenean rhoncus posuere odio in.</p>
 						</div>
 					</div>
 					<div class="clearfix"> </div>
-					<div class="portfolio-works">
-						<div class="col-md-4 portfolio-work-grid wow bounceIn" data-wow-delay="0.4s">
-							<div class="portfolio-work-grid-pic">
-								<img src="/images/p1.jpg" title="name" />
+				</div>
+			</div>
+		</div>
+		<div class="clearfix"> </div>
+		<div id="port" class="expertise">
+			<div class="expertice-grids">
+				<div class="col-md-7 expertice-left-grid wow fadeInLeft" data-wow-delay="0.4s">
+					<div class="expertise-head">
+						<h3>Purr Programming</h3>
+						<p>Proin iaculis purus consequat sem cure  digni ssim. Donec porttitora entum suscipit  aenean rhoncus posuere odio in tincidunt consequat sem cure  digni ssim. </p>
+					</div>
+					<!-- <div class="expertise-left-inner-grids">
+						<div class="e-left-inner-grid">
+							<div class="e-left-inner-grid-left">
+								<span class="e-icon1"> </span>
 							</div>
-							<div class="portfolio-work-grid-caption">
-								<h4>Project title</h4>
-								<p>Here you can find some of our latest works,  Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. to see the details of these works just click the thumbnails below.</p>
+							<div class="e-left-inner-grid-right">
+								<h4>Custom setup</h4>
+								<p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus.</p>
 							</div>
+							<div class="clearfix"> </div>
 						</div>
-						<div class="col-md-4 portfolio-work-grid wow bounceIn" data-wow-delay="0.4s">
-							<div class="portfolio-work-grid-pic">
-								<img src="/images/p2.jpg" title="name" />
+						<div class="e-left-inner-grid">
+							<div class="e-left-inner-grid-left">
+								<span class="e-icon2"> </span>
 							</div>
-							<div class="portfolio-work-grid-caption">
-								<h4>Project title</h4>
-								<p>Here you can find some of our latest works,  Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. to see the details of these works just click the thumbnails below.</p>
+							<div class="e-left-inner-grid-right">
+								<h4>Cloud control</h4>
+								<p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus.</p>
 							</div>
+							<div class="clearfix"> </div>
 						</div>
-						<div class="col-md-4 portfolio-work-grid wow bounceIn" data-wow-delay="0.4s">
-							<div class="portfolio-work-grid-pic">
-								<img src="/images/p3.jpg" title="name" />
+						<div class="e-left-inner-grid">
+							<div class="e-left-inner-grid-left">
+								<span class="e-icon3"> </span>
 							</div>
-							<div class="portfolio-work-grid-caption">
-								<h4>Project title</h4>
-								<p>Here you can find some of our latest works,  Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. to see the details of these works just click the thumbnails below.</p>
+							<div class="e-left-inner-grid-right">
+								<h4>All star support team</h4>
+								<p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus.</p>
 							</div>
+							<div class="clearfix"> </div>
 						</div>
-						<div class="col-md-4 portfolio-work-grid wow bounceIn" data-wow-delay="0.4s">
-							<div class="portfolio-work-grid-pic">
-								<img src="/images/p4.jpg" title="name" />
+						<div class="e-left-inner-grid">
+							<div class="e-left-inner-grid-left">
+								<span class="e-icon4"> </span>
 							</div>
-							<div class="portfolio-work-grid-caption">
-								<h4>Project title</h4>
-								<p>Here you can find some of our latest works,  Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. to see the details of these works just click the thumbnails below.</p>
+							<div class="e-left-inner-grid-right">
+								<h4>top notch security</h4>
+								<p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus.</p>
 							</div>
-						</div>
-						<div class="col-md-4 portfolio-work-grid wow bounceIn" data-wow-delay="0.4s">
-							<div class="portfolio-work-grid-pic">
-								<img src="/images/p5.jpg" title="name" />
-							</div>
-							<div class="portfolio-work-grid-caption">
-								<h4>Project title</h4>
-								<p>Here you can find some of our latest works,  Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. to see the details of these works just click the thumbnails below.</p>
-							</div>
-						</div>
-						<div class="col-md-4 portfolio-work-grid wow bounceIn" data-wow-delay="0.4s">
-							<div class="portfolio-work-grid-pic">
-								<img src="/images/p6.jpg" title="name" />
-							</div>
-							<div class="portfolio-work-grid-caption">
-								<h4>Project title</h4>
-								<p>Here you can find some of our latest works,  Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. to see the details of these works just click the thumbnails below.</p>
-							</div>
+							<div class="clearfix"> </div>
 						</div>
 						<div class="clearfix"> </div>
 					</div>
+					<a class="leran-more" href="#">Learn more</a> -->
 				</div>
+				<div class="col-md-5 expertice-right-grid wow fadeInRight" data-wow-delay="0.4s">
+
+				</div>
+				<div class="clearfix"> </div>
 			</div>
+		</div>
+		<div class="portfolio">
+			<div class="portfolio-top">
+				<div class="col-md-8 pull-right">
+					<div class="portfolio-top-left wow fadeInLeft" data-wow-delay="0.4s">
+						<h3>Cat Review</h3>
+						<p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit.</p>
+						<p>Iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. Proin iaculis purus consequat.</p>
+<!-- 						<div class="portfolio-top-left-grids">
+							<div class="portfolio-top-left-grid">
+								<div class="portfolio-top-left-grid-left">
+									<span class="p-icon1"> </span>
+								</div>
+								<div class="portfolio-top-left-grid-right">
+									<h5>Sail Away Your Worries</h5>
+									<p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. </p>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+							<div class="portfolio-top-left-grid">
+								<div class="portfolio-top-left-grid-left">
+									<span class="p-icon2"> </span>
+								</div>
+								<div class="portfolio-top-left-grid-right">
+									<h5>All-star support team</h5>
+									<p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. </p>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+							<div class="portfolio-top-left-grid">
+								<div class="portfolio-top-left-grid-left">
+									<span class="p-icon3"> </span>
+								</div>
+								<div class="portfolio-top-left-grid-right">
+									<h5>fully Integrated service</h5>
+									<p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. </p>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+						</div>
+ -->					</div>
+				</div>
+				<div class="col-md-4 portfolio-top-right-inner wow fadeInRight pull-left" data-wow-delay="0.4s">
+					<div class="portfolio-top-right">
+
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+				<!-- <div class="portfolio-works">
+					<div class="col-md-4 portfolio-work-grid wow bounceIn" data-wow-delay="0.4s">
+						<div class="portfolio-work-grid-pic">
+							<img src="/images/p1.jpg" title="name" />
+						</div>
+						<div class="portfolio-work-grid-caption">
+							<h4>Project title</h4>
+							<p>Here you can find some of our latest works,  Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. to see the details of these works just click the thumbnails below.</p>
+						</div>
+					</div>
+					<div class="col-md-4 portfolio-work-grid wow bounceIn" data-wow-delay="0.4s">
+						<div class="portfolio-work-grid-pic">
+							<img src="/images/p2.jpg" title="name" />
+						</div>
+						<div class="portfolio-work-grid-caption">
+							<h4>Project title</h4>
+							<p>Here you can find some of our latest works,  Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. to see the details of these works just click the thumbnails below.</p>
+						</div>
+					</div>
+					<div class="col-md-4 portfolio-work-grid wow bounceIn" data-wow-delay="0.4s">
+						<div class="portfolio-work-grid-pic">
+							<img src="/images/p3.jpg" title="name" />
+						</div>
+						<div class="portfolio-work-grid-caption">
+							<h4>Project title</h4>
+							<p>Here you can find some of our latest works,  Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. to see the details of these works just click the thumbnails below.</p>
+						</div>
+					</div>
+					<div class="col-md-4 portfolio-work-grid wow bounceIn" data-wow-delay="0.4s">
+						<div class="portfolio-work-grid-pic">
+							<img src="/images/p4.jpg" title="name" />
+						</div>
+						<div class="portfolio-work-grid-caption">
+							<h4>Project title</h4>
+							<p>Here you can find some of our latest works,  Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. to see the details of these works just click the thumbnails below.</p>
+						</div>
+					</div>
+					<div class="col-md-4 portfolio-work-grid wow bounceIn" data-wow-delay="0.4s">
+						<div class="portfolio-work-grid-pic">
+							<img src="/images/p5.jpg" title="name" />
+						</div>
+						<div class="portfolio-work-grid-caption">
+							<h4>Project title</h4>
+							<p>Here you can find some of our latest works,  Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. to see the details of these works just click the thumbnails below.</p>
+						</div>
+					</div>
+					<div class="col-md-4 portfolio-work-grid wow bounceIn" data-wow-delay="0.4s">
+						<div class="portfolio-work-grid-pic">
+							<img src="/images/p6.jpg" title="name" />
+						</div>
+						<div class="portfolio-work-grid-caption">
+							<h4>Project title</h4>
+							<p>Here you can find some of our latest works,  Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. to see the details of these works just click the thumbnails below.</p>
+						</div>
+					</div>
+					<div class="clearfix"> </div>
+				</div> -->
+			</div>
+		</div>
+
+		<div class="expertise">
+			<div class="expertice-grids expertice-right-grid-cd">
+				<div class="col-md-7 expertice-left-grid wow fadeInLeft" data-wow-delay="0.4s">
+					<div class="expertise-head">
+						<h3>Catinuous Delivery</h3>
+						<p>Proin iaculis purus consequat sem cure  digni ssim. Donec porttitora entum suscipit  aenean rhoncus posuere odio in tincidunt consequat sem cure  digni ssim. </p>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+
 		<div class="about">
-			<div class="wrap"> 
+			<div class="wrap">
 				<div class="about-head">
 					<h1>About us</h1>
 					<span> </span>
 				</div>
 				<div class="about-time-line">
 					<li>
-							<div class="cbp_tmicon img1"> </div>
-							<div class="cbp_tmlabel wow fadeInLeft" data-wow-delay="0.4s">
-								<h2>July 2010 Our Humble Beginnings</h2>
-								<p>Proin iaculis purus consequat sem cure  digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit.</p>
-							</div>
+						<div class="cbp_tmicon img1"> </div>
+						<div class="cbp_tmlabel wow fadeInLeft" data-wow-delay="0.4s">
+							<h2>July 2010 Our Humble Beginnings</h2>
+							<p>Proin iaculis purus consequat sem cure  digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit.</p>
+						</div>
 					</li>
 					<li>
-							<div class="cbp_tmicon1 img2"> </div>
-							<div class="cbp_tmlabel cbp_tmlabel1 wow fadeInRight" data-wow-delay="0.4s">
-								<h2>January 2011 Facing Startup Battles </h2>
-								<p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
-							</div>
+						<div class="cbp_tmicon1 img2"> </div>
+						<div class="cbp_tmlabel cbp_tmlabel1 wow fadeInRight" data-wow-delay="0.4s">
+							<h2>January 2011 Facing Startup Battles </h2>
+							<p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
+						</div>
 					</li><br />
 					<li>
-							<div class="cbp_tmicon2 img3"> </div>
-							<div class="cbp_tmlabel wow fadeInLeft" data-wow-delay="0.4s">
-								<h2>December 2012 Enter The Dark Days </h2>
-								<p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. Proin iaculis purus consequat sem cure digni.</p>
-							</div>
+						<div class="cbp_tmicon2 img3"> </div>
+						<div class="cbp_tmlabel wow fadeInLeft" data-wow-delay="0.4s">
+							<h2>December 2012 Enter The Dark Days </h2>
+							<p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. Proin iaculis purus consequat sem cure digni.</p>
+						</div>
 					</li>
 					<li>
-							<div class="cbp_tmicon3 img4"> </div>
-							<div class="cbp_tmlabel cbp_tmlabel1 wow fadeInRight" data-wow-delay="0.4s">
-								<h2>January 2013Our Triumph </h2>
-								<p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean.</p>
-							</div>
+						<div class="cbp_tmicon3 img4"> </div>
+						<div class="cbp_tmlabel cbp_tmlabel1 wow fadeInRight" data-wow-delay="0.4s">
+							<h2>January 2013Our Triumph </h2>
+							<p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean.</p>
+						</div>
 					</li>
 					<li>
-							<div class="cbp_tmicon4 img5"> </div>
+						<div class="cbp_tmicon4 img5"> </div>
 					</li>
 					<div class="clearfix"> </div>
 				</div>
 				<div class="clearfix"> </div>
-				</div>
+			</div>
 		</div>
-			<div id="team" class="team-members">
-					<div class="wrap"> 
-						<div class="tm-head">
-							<h3>our amazing team</h3>
-							<p>Proin iaculis purus consequat sem cure.</p>
-						</div>
-						<div class="tm-head-grids">
-							<div class="tm-head-grid wow fadeInLeft" data-wow-delay="0.4s">
-								<img src="/images/team-member1.jpg" alt="">
-								<h4>Kimberly Thompson</h4>
-								<h5>Marketer</h5>
-								<ul class="top-social-icons">
-									<li><a class="twitter" href="#"> </a></li>
-									<li><a class="facebook" href="#"> </a></li>
-									<li><a class="pin" href="#"> </a></li>
-									<div class="clear"> </div>
-								</ul>
-							</div>
-							<div class="tm-head-grid wow fadeInUp" data-wow-delay="0.4s">
-								<img src="/images/team-member2.jpg" alt="">
-								<h4>Rico Massimo</h4>
-								<h5>Coder</h5>
-								<ul class="top-social-icons">
-									<li><a class="twitter" href="#"> </a></li>
-									<li><a class="facebook" href="#"> </a></li>
-									<li><a class="pin" href="#"> </a></li>
-									<div class="clear"> </div>
-								</ul>
-							</div>
-							<div class="tm-head-grid wow fadeInRight" data-wow-delay="0.4s">
-								<img src="/images/team-member3.jpg" alt="">
-								<h4>Uku Mason</h4>
-								<h5>Graphic Designer</h5>
-								<ul class="top-social-icons">
-									<li><a class="twitter" href="#"> </a></li>
-									<li><a class="facebook" href="#"> </a></li>
-									<li><a class="pin" href="#"> </a></li>
-									<div class="clear"> </div>
-								</ul>
-							</div>
-							<div class="clearfix"> </div>
-						</div>
-						<p class="team-info">Proin iaculis purus consequat sem cure  digni ssim donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt proin iaculis.</p>
-					</div>
+		<div id="team" class="team-members">
+			<div class="wrap">
+				<div class="tm-head">
+					<h3>our amazing team</h3>
+					<p>Proin iaculis purus consequat sem cure.</p>
 				</div>
-			<div id="contact" class="contact">
-				<div class="container">
+				<div class="tm-head-grids">
+					<div class="tm-head-grid wow fadeInLeft" data-wow-delay="0.4s">
+						<img src="/images/team-member1.jpg" alt="">
+						<h4>Kimberly Thompson</h4>
+						<h5>Marketer</h5>
+						<ul class="top-social-icons">
+							<li><a class="twitter" href="#"> </a></li>
+							<li><a class="facebook" href="#"> </a></li>
+							<li><a class="pin" href="#"> </a></li>
+							<div class="clear"> </div>
+						</ul>
+					</div>
+					<div class="tm-head-grid wow fadeInUp" data-wow-delay="0.4s">
+						<img src="/images/team-member2.jpg" alt="">
+						<h4>Rico Massimo</h4>
+						<h5>Coder</h5>
+						<ul class="top-social-icons">
+							<li><a class="twitter" href="#"> </a></li>
+							<li><a class="facebook" href="#"> </a></li>
+							<li><a class="pin" href="#"> </a></li>
+							<div class="clear"> </div>
+						</ul>
+					</div>
+					<div class="tm-head-grid wow fadeInRight" data-wow-delay="0.4s">
+						<img src="/images/team-member3.jpg" alt="">
+						<h4>Uku Mason</h4>
+						<h5>Graphic Designer</h5>
+						<ul class="top-social-icons">
+							<li><a class="twitter" href="#"> </a></li>
+							<li><a class="facebook" href="#"> </a></li>
+							<li><a class="pin" href="#"> </a></li>
+							<div class="clear"> </div>
+						</ul>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<p class="team-info">Proin iaculis purus consequat sem cure  digni ssim donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt proin iaculis.</p>
+			</div>
+		</div>
+		<div id="contact" class="contact">
+			<div class="container">
 				<div class="contact-grids">
 					<div class="col-md-6">
 						<div class="contact-left wow fadeInRight" data-wow-delay="0.4s">
@@ -376,8 +377,8 @@
 						<div class="contact-right wow fadeInLeft" data-wow-delay="0.4s">
 							<form>
 								<input type="text" class="text" value="Name..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name...';}">
-					 			<input type="text" class="text" value="Email..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email...';}">
-					 	 		<textarea value="Message:" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message';}">Message..</textarea>
+								<input type="text" class="text" value="Email..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email...';}">
+								<textarea value="Message:" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message';}">Message..</textarea>
 								<input class="wow shake" data-wow-delay="0.3s" type="submit" value="Send Message" />
 							</form>
 						</div>
@@ -386,16 +387,40 @@
 				</div>
 				<div class="copy-right text-center">
 					<p>WTFPL 2015 <a href="http://pan.cat/">Pan Cat Technologies</a></p>
-					<script type="text/javascript">
-									$(document).ready(function() {
-										$().UItoTop({ easingType: 'easeOutQuart' });
-									});
-								</script>
-									<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+					<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
 				</div>
 			</div>
-			</div>
 		</div>
+	</div>
+	<!-- js -->
+	<script src="/js/jquery.min.js"></script>
+	<script src="/js/wow.min.js"></script>
+	<script type="text/javascript" src="/js/move-top.js"></script>
+	<script type="text/javascript" src="/js/easing.js"></script>
+	<script type="text/javascript">
+		new WOW().init();
+		$(document).ready(function($) {
+			var pull 		= $('#pull');
+			menu 		= $('nav ul');
+			menuHeight	= menu.height();
+			$(pull).on('click', function(e) {
+				e.preventDefault();
+				menu.slideToggle();
+			});
+			$(window).resize(function(){
+				var w = $(window).width();
+				if(w > 320 && menu.is(':hidden')) {
+					menu.removeAttr('style');
+				}
+			});
+			$().UItoTop({ easingType: 'easeOutQuart' });
+			$(".scroll").click(function(event){
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+			});
+		});
+		addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); }
+	</script>
 	</body>
 </html>
 
