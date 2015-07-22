@@ -106,6 +106,37 @@ textarea {
         background:#EE2F1B;
     }
 }
+
+.social-icons {
+    margin: 0;
+    padding: 0;
+    li {
+        display: inline-block;
+        margin: 1.2em 0.3em;
+    }
+    a {
+        width:44px;
+        height:44px;
+        display:block;
+    }
+}
+
+.social-icon {
+    background:url(/assets/img/social-icons.png) no-repeat;
+    &.twitter {
+        background-position: 0px 0px;
+    }
+    &.facebook {
+        background-position: -50px 0px;
+    }
+    &.github {
+        background-position: -150px 0px;
+    }
+    &.pin {
+        background-position: -100px 0px;
+    }
+}
+
 // --
 // index spalsh
 // --
@@ -282,6 +313,33 @@ textarea {
             color: #fff;
             @include text-shadow(2px 1px 1px #0C0C0B);
         }
+    }
+}
+
+#amazing-team {
+
+    .container {
+        width: 75%;
+    }
+
+    img {
+        @include border-radius(30em);
+    }
+
+    h4 {
+        font-size: 1.2em;
+        color: #222222;
+        font-family: 'Montserrat', sans-serif;
+        margin: 0.8em 0 0.2em 0;
+        @include text-shadow(0px 0px 1px rgba(66, 66, 66, 0.39));
+    }
+
+    h5 {
+        font-family: 'Open Sans', sans-serif;
+        color: #777777;
+        margin: 0 auto;
+        font-size: 0.95em;
+        line-height: 1.44em;
     }
 }
 
