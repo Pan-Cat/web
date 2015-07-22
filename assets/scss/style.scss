@@ -1,6 +1,7 @@
 @import "compass/css3/transition";
 @import "compass/utilities/general/clearfix";
 @import "compass/css3/text-shadow";
+@import "compass/css3/border-radius";
 
 // --
 // buildin element
@@ -33,6 +34,14 @@ body a {
     > div {
         padding: 0;
     }
+
+    p {
+        font-weight: 400;
+        font-family: "Open Sans", sans-serif;
+        line-height: 1.7em;
+        color: #888888;
+    }
+
     @include clearfix;
 }
 
@@ -53,19 +62,50 @@ body a {
         font-size: 1.275em;
         text-transform: uppercase;
     }
+}
 
-    p {
-        font-weight: 400;
-        font-family: "Open Sans", sans-serif;
-        line-height: 1.7em;
-        color: #888888;
-    }
+.section-footer {
+    margin: 0 auto;
+    text-align: center;
+    width: 50%;
 }
 
 .section-grids {
     padding:3em 0;
 }
 
+.input {
+    width: 100%;
+    padding: 0.8em;
+    font-family: 'Open Sans', sans-serif;
+    color: #777;
+    font-weight: 300;
+    outline: none;
+    border: 1px solid #111111;
+    @include border-radius(0.3em);
+    @include transition(border-color 0.4s);
+    margin: 0 0 1em 0;
+}
+
+textarea {
+    min-height: 150px;
+}
+
+.submit {
+    background:#35C2F8;
+    padding:0.9em 1.5em;
+    color:#FFF;
+    text-transform:uppercase;
+    border:none;
+    cursor:pointer;
+    @include border-radius(3em);
+    @include transition(0.5s all);
+
+
+    &:hover {
+        background:#EE2F1B;
+    }
+}
 // --
 // index spalsh
 // --
@@ -219,7 +259,9 @@ body a {
         background: url(/assets/img/section-purr-progamming-bg.png) no-repeat 68% 69%;
     }
 }
-
+// --
+// catinuous-delivery
+// --
 #catinuous-delivery {
     margin: 0;
     padding: 0;
@@ -240,5 +282,29 @@ body a {
             color: #fff;
             @include text-shadow(2px 1px 1px #0C0C0B);
         }
+    }
+}
+
+#contact {
+    h2, p {
+        color: #fff;
+    }
+
+    .emoticon {
+        color: #333;
+    }
+}
+
+#footer {
+    background-color: #000;
+
+    .copy-right {
+        color: #FFF;
+        font-size: 1em;
+        border-top: 1px solid #FFF;
+        padding: 1.5em 0;
+        font-weight: 300;
+        font-family: 'Open Sans', sans-serif;
+        margin-top: 5em;
     }
 }
