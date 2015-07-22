@@ -707,6 +707,10 @@ a.leran-more:hover{
 .facebook{
 	background: url(../images/top-social-icons.png) no-repeat -50px 0px;
 }
+.github{
+	background: url(../images/github-sociocon.png) no-repeat -2px -2px;
+  background-size: 44px 44px
+}
 .pin{
 	background: url(../images/top-social-icons.png) no-repeat -100px 0px;
 }
