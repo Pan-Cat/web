@@ -322,6 +322,10 @@ textarea {
         width: 75%;
     }
 
+    .section-content {
+        text-align: center;
+    }
+
     img {
         @include border-radius(30em);
     }
