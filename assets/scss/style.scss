@@ -389,6 +389,137 @@ textarea {
         }
     }
 }
+#customer {
+
+}
+
+#customers-line {
+    padding: 0;
+    list-style: none;
+    position: relative;
+    width: 60%;
+    margin: 6em auto 15em;
+
+    li {
+        display: inline;
+        min-height: 300px;
+
+        @media (min-width: 769px) {
+
+            &:nth-child(even) .line-label {
+                margin: 0 0 15px 64%;
+                text-align: left;
+                @media (max-width: 1024px) {
+                    margin: 0 0 15px 70%;
+                }
+            }
+        }
+    }
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 3px;
+        background: #F1F1F1;
+        left: 49%;
+        margin-left: -10px;
+
+        @media (max-width: 768px) {
+            left: 19.5%;
+        }
+    }
+
+    .line-image {
+        width: 170px;
+        height: 170px;
+        speak: none;
+        font-size: 1.4em;
+        line-height: 40px;
+        position: absolute;
+        color: #fff;
+        border-radius: 50%;
+        box-shadow: 0 0 0 8px #F1F1F1;
+        -webkit-box-shadow: 0 0 0 8px #F1F1F1;
+        -moz-box-shadow: 0 0 0 8px #F1F1F1;
+        -o-box-shadow: 0 0 0 8px #F1F1F1;
+        text-align: center;
+        left: 41%;
+        top: 0;
+        margin: 0 0 0 -25px;
+        display:block;
+        background-size: 100% 100%;
+        &.img1 {
+            background:url(/assets/img/customers-line-img1.jpg) no-repeat;
+        }
+        &.img2 {
+            background:url(/assets/img/customers-line-img2.jpg) no-repeat;
+            top: 27%;
+        }
+        &.img3 {
+            background:url(/assets/img/customers-line-img3.jpg) no-repeat;
+            top: 52%;
+        }
+        &.img4 {
+            background:url(/assets/img/customers-line-img4.jpg) no-repeat;
+            top: 77%;
+        }
+        &.img5 {
+            background:url(/assets/img/customers-line-img5.png) no-repeat;
+            top: 100%;
+        }
+
+        @media (max-width: 768px) {
+            left: 10%;
+        }
+    }
+
+    .line-label {
+        margin: 0 0 0px -8%;
+        padding: 1em 0em 0em 0;
+        font-size: 1em;
+        font-weight: 300;
+        line-height: 1.4;
+        position: relative;
+        border-radius: 5px;
+        width: 40%;
+        text-align: right;
+        min-height: 250px;
+
+        h2 {
+            color: #222222;
+            text-transform: uppercase;
+            font-weight: 600;
+            font-size: 1.2em;
+        }
+
+        p {
+            color: #777777;
+            line-height: 1.6em;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 0.875em;
+            margin-top: 1em;
+        }
+
+        @media (max-width: 1024px) {
+            width: 55%;
+            margin: 0% 0 0px -23%;
+        }
+
+        @media (max-width: 768px) {
+            width: 56%;
+            margin: 0% 100% 0px 35%;
+            text-align: left;
+        }
+    }
+
+    @media (max-width: 768px) {
+        width: 100%;
+        margin: 0 0 150px 0;
+    }
+}
+
 
 #amazing-team {
 
