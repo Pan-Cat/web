@@ -20,6 +20,9 @@ body a {
 // --
 .container {
     width: 70%;
+    @media (max-width: 768px) {
+        width: 95%;
+    }
 }
 
 .hr-line {
@@ -52,6 +55,10 @@ body a {
         color: #222222;
         text-transform: uppercase;
         @include text-shadow(3px 2px 2px #999);
+
+        @media (max-width: 480px) {
+            font-size: 2em;
+        }
     }
 }
 
@@ -147,6 +154,9 @@ textarea {
     .content {
         padding: 10em 0 12em;
         color: #fff;
+        @media (max-width: 1024px) {
+            padding: 2em 0 2em;
+        }
     }
 
     h1 {
@@ -157,6 +167,15 @@ textarea {
         width: 70%;
         display: inline-block;
         line-height: 1.3em;
+        @media (max-width: 1024px) {
+            font-size: 2.8em;
+        }
+        @media (max-width: 768px) {
+            font-size: 2em;
+        }
+        @media (max-width: 640px) {
+            font-size: 1.7em;
+        }
     }
 
     p {
@@ -167,16 +186,43 @@ textarea {
         font-family: 'Open Sans', sans-serif;
         margin: 1em auto;
         width: 50%;
+
+        @media (max-width: 640px) {
+            width: 100%;
+            font-size: 0.875em;
+        }
+
     }
 }
 
 #header {
     padding: 2em 0;
+    position: relative;
+
+    nav {
+        float: right;
+        @media only screen and (max-width: 768px) {
+            float: none;
+        }
+    }
+
+    .logo {
+        float: left;
+        @media only screen and (max-width: 768px) {
+            float: none;
+        }
+    }
+}
+
+#navbar-menu {
+    position: absolute;
+    top: 30px;
+    right: 0;
 }
 
 .navbar {
     margin-top: 10px;
-
+    padding: 0;
     min-height: 0;
     margin-bottom: 0;
 
@@ -198,6 +244,25 @@ textarea {
 
         &:hover {
             color: #f00;
+        }
+    }
+
+    @media only screen and (max-width: 768px) {
+        display: none;
+        margin: 35px 0 0 0;
+        background-color: #fff;
+        width: 100%;
+        li {
+            display: block;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            padding: 0;
+        }
+
+        a {
+            color: #333;
+            border-bottom: 1px solid #eee;
         }
     }
 }
@@ -251,6 +316,9 @@ textarea {
     background: #F7F7F7;
     .col-md-7 {
         padding: 0 5em;
+        @media (max-width: 768px) {
+            padding: 0 2em;
+        }
     }
 
     .images {
@@ -273,10 +341,6 @@ textarea {
         margin: 50px 0 30px 0;
     }
 
-    .col-md-7 {
-        padding: 0 5em;
-    }
-
     .images {
         margin: 0;
         padding: 0;
@@ -286,8 +350,18 @@ textarea {
     }
 
     .col-md-7 {
+        padding: 0 5em;
         min-height: 450px;
         background: url(/assets/img/section-purr-progamming-bg.png) no-repeat 68% 69%;
+        @media (max-width: 768px) {
+            padding: 0 2em;
+        }
+    }
+
+    .col-md-5 {
+        @media (max-width: 1024px) {
+            width: 100%;
+        }
     }
 }
 // --
@@ -369,4 +443,28 @@ textarea {
         font-family: 'Open Sans', sans-serif;
         margin-top: 5em;
     }
+}
+
+#toTop {
+    display: none;
+    text-decoration: none;
+    position: fixed;
+    bottom: 14px;
+    right: 3%;
+    overflow: hidden;
+    width: 40px;
+    height: 40px;
+    border: none;
+    text-indent: 100%;
+    background: url("/assets/img/to-top.png") no-repeat 0px 0px;
+}
+#toTopHover {
+    width: 40px;
+    height: 40px;
+    display: block;
+    overflow: hidden;
+    float: right;
+    opacity: 0;
+    -moz-opacity: 0;
+    filter: alpha(opacity=0);
 }
