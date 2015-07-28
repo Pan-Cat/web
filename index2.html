@@ -281,11 +281,60 @@
 
         <!-- start:jobs -->
         <div id="jobs" class="section">
-            <div class="section-header text-center">
-                <h2>Jobs</h2>
-                <span class="hr-line"></span>
-            </div>
-            <div class="section-content">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2>Jobs</h2>
+                    <span class="hr-line"></span>
+                </div>
+                <div class="section-content">
+                    <div class="row">
+                        <div class="job-box col-md-4 wow fadeInLeft">
+                            <img src="assets/img/jobs-1.jpg" class="job-image img-responsive img-rounded" />
+                            <div class="job-text">
+                                <h4>Job Title</h4>
+                                <p>We're trying to build a productive team with happy working environment. We took workplace diversity very seriously. Now it's one-to-one ratio between developers and cats. We hope to keep it that way.</p>
+                            </div>
+                        </div>
+                        <div class="job-box col-md-4 wow fadeInUp">
+                            <img src="assets/img/jobs-2.jpg" class="job-image img-responsive img-rounded" />
+                            <div class="job-text">
+                                <h4>Job Title</h4>
+                                <p>We're trying to build a productive team with happy working environment. We took workplace diversity very seriously. Now it's one-to-one ratio between developers and cats. We hope to keep it that way.</p>
+                            </div>
+                        </div>
+                        <div class="job-box col-md-4 wow fadeInRight">
+                            <img src="assets/img/jobs-3.jpg" class="job-image img-responsive img-rounded" />
+                            <div class="job-text">
+                                <h4>Job Title</h4>
+                                <p>We're trying to build a productive team with happy working environment. We took workplace diversity very seriously. Now it's one-to-one ratio between developers and cats. We hope to keep it that way.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="job-box col-md-4 wow fadeInLeft">
+                            <img src="assets/img/jobs-4.jpg" class="job-image img-responsive img-rounded" />
+                            <div class="job-text">
+                                <h4>Job Title</h4>
+                                <p>We're trying to build a productive team with happy working environment. We took workplace diversity very seriously. Now it's one-to-one ratio between developers and cats. We hope to keep it that way.</p>
+                            </div>
+                        </div>
+                        <div class="job-box col-md-4 wow fadeInUp">
+                            <img src="assets/img/jobs-5.jpg" class="job-image img-responsive img-rounded" />
+                            <div class="job-text">
+                                <h4>Job Title</h4>
+                                <p>We're trying to build a productive team with happy working environment. We took workplace diversity very seriously. Now it's one-to-one ratio between developers and cats. We hope to keep it that way.</p>
+                            </div>
+                        </div>
+                        <div class="job-box col-md-4 wow fadeInRight">
+                            <img src="assets/img/jobs-6.jpg" class="job-image img-responsive img-rounded" />
+                            <div class="job-text">
+                                <h4>Job Title</h4>
+                                <p>We're trying to build a productive team with happy working environment. We took workplace diversity very seriously. Now it's one-to-one ratio between developers and cats. We hope to keep it that way.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <!-- end:jobs -->
@@ -331,6 +380,9 @@
                 $(".scroll").click(function(e){
                     e.preventDefault();
                     $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+                });
+                $(".job-box").click(function() {
+                    $(this).toggleClass("hover");
                 });
             });
         </script>

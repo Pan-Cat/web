@@ -2,6 +2,7 @@
 @import "compass/utilities/general/clearfix";
 @import "compass/css3/text-shadow";
 @import "compass/css3/border-radius";
+@import "compass/css3/box-shadow";
 
 // --
 // buildin element
@@ -154,9 +155,6 @@ textarea {
     .content {
         padding: 10em 0 12em;
         color: #fff;
-        @media (max-width: 1024px) {
-            padding: 2em 0 2em;
-        }
     }
 
     h1 {
@@ -167,15 +165,6 @@ textarea {
         width: 70%;
         display: inline-block;
         line-height: 1.3em;
-        @media (max-width: 1024px) {
-            font-size: 2.8em;
-        }
-        @media (max-width: 768px) {
-            font-size: 2em;
-        }
-        @media (max-width: 640px) {
-            font-size: 1.7em;
-        }
     }
 
     p {
@@ -186,12 +175,6 @@ textarea {
         font-family: 'Open Sans', sans-serif;
         margin: 1em auto;
         width: 50%;
-
-        @media (max-width: 640px) {
-            width: 100%;
-            font-size: 0.875em;
-        }
-
     }
 }
 
@@ -201,16 +184,10 @@ textarea {
 
     nav {
         float: right;
-        @media only screen and (max-width: 768px) {
-            float: none;
-        }
     }
 
     .logo {
         float: left;
-        @media only screen and (max-width: 768px) {
-            float: none;
-        }
     }
 }
 
@@ -244,25 +221,6 @@ textarea {
 
         &:hover {
             color: #f00;
-        }
-    }
-
-    @media only screen and (max-width: 768px) {
-        display: none;
-        margin: 35px 0 0 0;
-        background-color: #fff;
-        width: 100%;
-        li {
-            display: block;
-            height: 50px;
-            line-height: 50px;
-            text-align: center;
-            padding: 0;
-        }
-
-        a {
-            color: #333;
-            border-bottom: 1px solid #eee;
         }
     }
 }
@@ -316,9 +274,6 @@ textarea {
     background: #F7F7F7;
     .col-md-7 {
         padding: 0 5em;
-        @media (max-width: 768px) {
-            padding: 0 2em;
-        }
     }
 
     .images {
@@ -357,12 +312,6 @@ textarea {
             padding: 0 2em;
         }
     }
-
-    .col-md-5 {
-        @media (max-width: 1024px) {
-            width: 100%;
-        }
-    }
 }
 // --
 // catinuous-delivery
@@ -389,6 +338,9 @@ textarea {
         }
     }
 }
+// --
+// customers
+// --
 #customer {
 
 }
@@ -403,17 +355,6 @@ textarea {
     li {
         display: inline;
         min-height: 300px;
-
-        @media (min-width: 769px) {
-
-            &:nth-child(even) .line-label {
-                margin: 0 0 15px 64%;
-                text-align: left;
-                @media (max-width: 1024px) {
-                    margin: 0 0 15px 70%;
-                }
-            }
-        }
     }
 
     &:before {
@@ -425,10 +366,6 @@ textarea {
         background: #F1F1F1;
         left: 49%;
         margin-left: -10px;
-
-        @media (max-width: 768px) {
-            left: 19.5%;
-        }
     }
 
     .line-image {
@@ -439,17 +376,16 @@ textarea {
         line-height: 40px;
         position: absolute;
         color: #fff;
-        border-radius: 50%;
-        box-shadow: 0 0 0 8px #F1F1F1;
-        -webkit-box-shadow: 0 0 0 8px #F1F1F1;
-        -moz-box-shadow: 0 0 0 8px #F1F1F1;
-        -o-box-shadow: 0 0 0 8px #F1F1F1;
         text-align: center;
         left: 41%;
         top: 0;
         margin: 0 0 0 -25px;
         display:block;
         background-size: 100% 100%;
+
+        @include border-radius(50%);
+        @include box-shadow(0 0 0 8px #F1F1F1);
+
         &.img1 {
             background:url(/assets/img/customers-line-img1.jpg) no-repeat;
         }
@@ -468,10 +404,6 @@ textarea {
         &.img5 {
             background:url(/assets/img/customers-line-img5.png) no-repeat;
             top: 100%;
-        }
-
-        @media (max-width: 768px) {
-            left: 10%;
         }
     }
 
@@ -501,26 +433,12 @@ textarea {
             font-size: 0.875em;
             margin-top: 1em;
         }
-
-        @media (max-width: 1024px) {
-            width: 55%;
-            margin: 0% 0 0px -23%;
-        }
-
-        @media (max-width: 768px) {
-            width: 56%;
-            margin: 0% 100% 0px 35%;
-            text-align: left;
-        }
-    }
-
-    @media (max-width: 768px) {
-        width: 100%;
-        margin: 0 0 150px 0;
     }
 }
 
-
+// --
+// amazing-team
+// --
 #amazing-team {
 
     .container {
@@ -550,6 +468,28 @@ textarea {
         font-size: 0.95em;
         line-height: 1.44em;
     }
+}
+
+#jobs {
+    background: #F7F7F7;
+
+    .container {
+        width: 90%;
+    }
+
+    img {
+        margin: 0 auto;
+    }
+
+    .job-text {
+
+        text-align: center;
+
+        p {
+            margin: 5px 10px;
+        }
+    }
+
 }
 
 #contact {
@@ -599,3 +539,149 @@ textarea {
     -moz-opacity: 0;
     filter: alpha(opacity=0);
 }
+
+// --
+// RWD
+// --
+
+@media (min-width: 1025px) {
+
+    #jobs {
+
+        .job-box {
+            position: relative;
+            &:hover .job-text, &.hover .job-text {
+                opacity: 1;
+            }
+        }
+
+        .job-text {
+            background-color: rgba(150, 150, 150, 0.6);
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+
+            color: #fff;
+            margin: 0 15px;
+            padding: 2em 0;
+            @include border-radius(6px);
+            @include transition(0.5s opacity);
+
+            h4 {
+                font-size: 1.2em;
+                font-weight: 800;
+            }
+
+            p {
+                color: #fff;
+            }
+        }
+
+    }
+}
+
+@media (max-width: 1024px) {
+    #index-splash {
+        h1 {
+            font-size: 2.8em;
+        }
+
+        .content {
+            padding: 2em 0 2em;
+        }
+
+        p {
+            width: 100%;
+            font-size: 0.875em;
+        }
+    }
+
+    #header {
+        nav, .logo {
+            float: none;
+        }
+    }
+
+    #cat-review .col-md-5 {
+        width: 100%;
+    }
+
+    #customers-line {
+        .line-label {
+            width: 55%;
+            margin: 0% 0 0px -23%;
+        }
+    }
+}
+
+@media (min-width: 769px) {
+    #customers-line {
+        li:nth-child(even) .line-label {
+            margin: 0 0 15px 64%;
+            text-align: left;
+            @media (max-width: 1024px) {
+                margin: 0 0 15px 70%;
+            }
+        }
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    #index-splash h1 {
+        font-size: 2em;
+    }
+
+    .navbar {
+        display: none;
+        margin: 35px 0 0 0;
+        background-color: #fff;
+        width: 100%;
+        li {
+            display: block;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            padding: 0;
+        }
+
+        a {
+            color: #333;
+            border-bottom: 1px solid #eee;
+        }
+    }
+
+    #purr-programming .col-md-7 {
+        padding: 0 2em;
+    }
+
+    #customers-line {
+
+        width: 100%;
+        margin: 0 0 150px 0;
+
+        &:before {
+            left: 19.5%;
+        }
+
+        .line-image {
+            left: 10%;
+        }
+
+        .line-label {
+            width: 56%;
+            margin: 0% 100% 0px 35%;
+            text-align: left;
+        }
+    }
+}
+@media (max-width: 640px) {
+    #index-splash h1 {
+        font-size: 1.7em;
+    }
+}
+
