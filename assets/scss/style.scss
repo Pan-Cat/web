@@ -627,6 +627,10 @@ textarea {
             }
         }
     }
+
+    #jobs .row {
+        margin-top: 20px;
+    }
 }
 
 
@@ -683,5 +687,14 @@ textarea {
     #index-splash h1 {
         font-size: 1.7em;
     }
+}
+
+@media (max-width: 480px) {
+
+    #customers-line .line-image {
+        width: 100px;
+        height: 100px;
+    }
+
 }
 
