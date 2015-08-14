@@ -1,5 +1,6 @@
 "use strict";
 
+# we are not considering the utf8 char in our CatScript
 class CatScript
     @encodeString = "Meow"
 
